@@ -1,0 +1,150 @@
+%% LaTeX Template by Peter Francis
+%% Contact: franpe02@gettysburg.edu
+%% Updated 9/17/18
+
+\documentclass[11PT, a4paper]{article}
+
+%% Font and Language
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+
+%% Formating the Page
+\usepackage[a4paper,top=1in,bottom=1in,left=1in,right=1in, marginparwidth=.5 in]{geometry}
+%\pagenumbering{gobble} %%% UNCOMMENT THIS LINE TO TURN OF PAGE NUMBERS
+%\usepackage[parfill]{parskip} %%% Activate to begin paragraphs with an empty line rather than an indent
+
+%% Line spacing -- change to 2 for double space, etc.
+\linespread{1.3}
+
+%% Some Useful Packages
+\usepackage{hyperref, amsmath, amsthm, pgf, latexsym, amsfonts, graphicx, enumerate, float, MnSymbol, booktabs, siunitx}
+
+%% Useful commands-- use the syntax    \newcommand{\what you want to type}{real command}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\dabba}{\partial}
+\newcommand{\e}{\epsilon}
+\newcommand{\bs}{\blacksquare}
+
+%% Title
+\title{Lab Title\\Class}\author{Author}
+
+\begin{document}
+\maketitle
+\begin{center}
+\begin{tabular}{l r}
+%%%%%%%%%%%%%%%%%%%% TYPE BELOW %%%%%%%%%%%%%%%%%%%%%%
+
+Date Performed: & 'date'\\ % Date the experiment was performed
+Partners: &'Partner name' \\ % Partner names
+Instructor: & Professor Smith % Instructor/supervisor
+\end{tabular}
+\end{center}
+
+\begin{abstract}
+Summarize the goal of the experiment, the basic technique, and the results in the abstract. This short synopsis of the report stands alone, so avoid references to the body of the paper. \end{abstract} 
+
+
+\tableofcontents %% delete this only if you want to delete the table of contents
+\newpage
+
+\section{Introduction}
+Give an overview of the experiment, stating the goal and motivation (purpose) of the experiment, reviewing the history of the experiment or technique or concept, and outlining the basic technique without going into procedural detail. The idea is to introduce the reader to what will follow and put this experiment into a broader context: historically, in terms of experimental technique, applications of the techniques or devices, etc. 
+
+\section{Theory}
+Discuss the theoretical background of the experiment, the physics of the experiment. Derive any equations that will be used in the analysis section and provide enough theoretical explanation so that aspects of the procedure discussed in the experimental section are understandable, and their motivations are clear.\\
+
+Equations should be numbered and on their own line. You can add an equation using the Equation editor by choosing Insert, Object and choose Microsoft Equation. After the equation, tab over a few times and add an equation number in parentheses. Then right justify that line. Then tab such that the equation is roughly centered. If you don't have an equation editor on your home computer, you may work in any campus computer lab. Equations are part of the text, they should be preceded and followed by an appropriate context and all variables should be defined. For example, Newton?s Second Law states that the acceleration, $\vec{a}$, is given by
+
+\begin{equation}\label{newton}
+\vec{a}=\Sigma\vec{F}/m
+\end{equation}
+
+where $\Sigma\vec{F}$ is the net force, and $m$ is the inertial mass. Be sure to cite authors from whom you
+borrow information \cite{ReferenceLabel1}. The citation label shown in the previous sentence references a full
+citation in the References section. You can reference equations like this, Eq. \ref{newton}.
+
+\section{Experimental Procedure}
+Describe the experimental apparatus (include a sketch or picture or diagram) and details of the procedure. Describe any procedural challenges that lead to experimental uncertainty. This should not read like a procedural manual! You are describing what you did in lab, not giving the recipe to a friend. You will need to make some choices about what level of detail to include. It should be clear enough how you did the experiment that the reader could repeat it, but not bogged down in minutiae. Be succinct!\\
+
+All figures should be of reasonable size (say 1/3 of page), centered, and have captions. You can cut and paste most figures into Word, or use Insert. Crop and size the image as needed. To add a caption, right click on the image and choose insert caption. Under options choose figure from the label. Type the caption in the text box.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{example.jpg}
+\caption{Short Description}
+\label{fig:method}
+\end{figure}
+
+\section{Data and Analysis}
+
+https://www.sharelatex.com/learn/Tables\\
+
+In a formal lab report think carefully about what data and analysis steps to include to succinctly
+but clearly convey your steps from raw data to final results. Tables are usually the best way to
+include your data and calculations using those data. You may use the Table option of the toolbar.
+Again add a caption by right clicking on the table and choose table from the label box. You may
+wish to paste in tables from Excel, but this is not the place for a dump of all your excel tables.
+Again you will need to make choices about how best to display your data, which data need to be
+included in a table, for which data a graph is sufficient, does it make more sense to include raw
+data and analyzed results in the same table, etc. Remember to always include equations used in
+calculations and error analysis and annotate them properly. With figures and tables properly
+named and captioned, you can refer to them by name in the text. For example, using the eyepiece 
+of the Milikan oil-drop apparatus shown in Fig. 1, we were able to watch the charged oil drops
+fall at terminal velocity.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=90mm]{example.jpg}
+\caption{Overall process}
+\label{fig:method}
+\end{figure}
+
+
+In your analysis you are determining results from the data. You may have results and data in the
+same table (if appropriate). That is ok, as long as you explain how the results were calculated
+from that data. If appropriate include a discussion of the propagation of error from the
+uncertainty in raw data. In the final discussion consider random and systematic
+uncertainty/errors and watch units! This is the section where you discuss the results and their
+implications.\\
+
+Make sure graphs have captions and the correct labels on the axes with units, etc. Make sure that
+the business part of the graph (e.g., the data and fit line) is the major portion of the figure; you
+may expand the data part of the graph and put labels, keys, etc. over unused portions of the graph
+but don?t cover the axes, data, error bars, or fit. Be certain to expand fit text boxes to include all
+fit parameters. Make sure your graphs are clear, large, and maximize readability. Data points
+should be commensurate with the size of your error bars and the scale of the axes should make
+those error bars visible (if reasonable, sometime error bars are small). \\
+
+\section{Results and Conclusion}
+This should be short. This section briefly recaps the goals from the introduction and restates the
+major results. Briefly summarize sources of error. Think of the ?conclusions? as the
+?summary?. If there are extensions to the experiment one might make (future work if curious),
+you can mention that here as well.
+
+\newpage
+
+
+\begin{thebibliography}{10} % THIS IS YOUR REFERENCES. LIST REFERENCES BELOW.
+
+
+
+
+%%% COMMENT THIS
+\bibitem{ReferenceLabel1}First MI Last, Title. Chapter A, Chapter name, Edition 'number'. (City, State, Publishing company, year Published), pp. 'number'-'number'
+
+%\bibitem{ReferenceLabel2}First MI Last, Title, WWW Document, URL
+
+%\bibitem{ReferenceLabel3}First MI Last, Title, 'Distributing College' Lab Handout (Unpublished).
+
+\end{thebibliography}
+
+\vfill
+I have upheld the highest principles of honesty and integrity in all of my academic work and have not witnessed a violation of the Honor Code.
+
+%%%%%%%%%%%%%%%%%%%% TYPE ABOVE %%%%%%%%%%%%%%%%%%%%%%
+\end{document}
