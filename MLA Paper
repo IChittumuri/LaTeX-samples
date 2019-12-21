@@ -1,0 +1,71 @@
+%% LaTeX Template by Peter Francis
+%% Contact: franpe02@gettysburg.edu
+
+\documentclass[12pt]{book}
+
+%% Font and Language
+\usepackage{times}
+
+%% Formating the Page
+\usepackage{graphicx}
+\usepackage[letter,top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\setlength{\parindent}{0.5in}
+
+%% Allows the right side of the text to be jagged -- Comment if you want both sided to be flat
+% \usepackage{ragged2e}
+% \RaggedRight
+% \usepackage[none]{hyphenat}
+
+%% Line spacing -- change to 2 for double space, etc.
+\linespread{2}
+
+
+
+%% Title
+\newcommand{\tMaker}[7]{
+\thispagestyle{empty}
+\vspace*{1.33 in}
+\begin{center}
+\Large #1:\\#2
+\end{center}
+\vfill
+\vfill
+\vfill
+\vfill
+\begin{center}
+#3
+\end{center}
+\vfill
+\begin{flushright}
+#4
+
+#5
+
+#6
+
+#7
+\end{flushright}
+
+
+\newpage
+}
+
+\begin{document}
+\tMaker{title 1}{title 2}{College}{Name}{Professor}{Class}{date}
+
+\setcounter{page}{1}
+tfhmfmjh fmjhfmhjf mghjf mhjgf m,hjgfmhgjf mghjfkjhgkjhgfkjhgfkjhgfk jhgf kjhfg kjhfg kjhfg kjhfg kjhfg kjhg kjhg kjhg kjhg kjhfg kjhgf kjhfgk jhgkjhgk jhgkj hgk jhgk jhg kjhg kjhg kjhg kjhg kjhg kjhg kjhgkjhgkjhgjkhgkjhg h hh h kjhg hg jhg jhghfgvbn nhgvb bhbn bghbn ghbn ghb ghbv bvvb bvgfv  hgv nhgbv hb nb bn bhn hjnbghnb ghnbvgbhn hn 
+
+\newpage
+
+\begin{center}
+Works Cited
+\end{center}
+
+
+\vfill
+I have upheld the highest principles of honesty and integrity in all of my academic work and have not witnessed a violation of the Honor Code.
+% \includegraphics[width=3cm]{signature} %%% UNCOMMENT IF YOU HAVE A signature.jpg IMAGE IN YOUR DIRECTORY
+
+%%%%%%%%%%%%%%%%%%%% TYPE ABOVE %%%%%%%%%%%%%%%%%%%%%%
+\end{document}
