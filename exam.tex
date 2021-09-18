@@ -1,61 +1,89 @@
+%% LaTeX Template by Peter E. Francis
+%% Contact: Peter.E.Francis@StonyBrook.edu
+
 \documentclass[12pt]{article}
-\usepackage{latexsym}
-\usepackage{amsfonts, enumerate, hyperref, amsmath, amsthm, pgf, latexsym, graphicx, float, soul}
+
+\usepackage{latexsym, amsfonts, enumerate, hyperref, amsmath, amsthm, pgf, latexsym, graphicx, float, soul, lipsum, fancyhdr}
 
 
 %% FORMAT THE PAGE
-\topmargin -3em
-\textheight 9.5in
-\evensidemargin 0in
-\oddsidemargin 0in
-\textwidth 6.5in
-\parskip .1in
+\usepackage[top=1.2in,bottom=1.2in,left=1.2in,right=1.2in, marginparwidth=.5in]{geometry}
+
+%%% LINE SPACING -- change to 2 for double space, etc.
+\renewcommand{\baselinestretch}{1}
 
 
-\thispagestyle{empty}
+%%% Exam Info
+\newcommand{\myclass}{MAT 341}
+\newcommand{\mycoursetitle}{Applied Complex Analysis}
+\newcommand{\myexamname}{Exam 1}
+\newcommand{\myauthor}{Dr. Adam Mathy}
+\newcommand{\mydate}{\today}
+
+
+
+%%% PAGE HEADER SETUP
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\myexamname}
+\chead{}
+\lhead{\myclass: \mycoursetitle}
+\cfoot{\thepage}
+
+
+
+
 
 \begin{document}
 
+\thispagestyle{empty}
+
 \hrule
-\vspace{.2cm}
-
-{\Large \noindent Class Name \hfill Exam Title}
-
-\vspace{.3cm}
+\vspace{.5em}
+\noindent {\Large\myclass} \hfill {\Large\myexamname}\\
+\noindent {\mycoursetitle} \hfill {\mydate} \\
+\noindent {\myauthor}
+\vspace{.25em}
 \hrule
-
+\vspace{1em}
 \noindent NAME:
 
 \vspace{1em}
 
-\noindent \hrulefill\rule{0pt}{4pt}
-
-Introduction paragraph.
-
-\begin{itemize}
-
-  \item Instruction 1
-  \item Instruction 2
-  \item Instruction 3
-  \item \dots
-
-\end{itemize}
+\noindent \hrulefill
 
 
+\textbf{Instruction paragraph.} \lipsum[1]
+
+\vfill
 
 \vfill
 
 Before handing in this exam, sign below in order to affirm the following pledge.
 \begin{center}
-\textbf{I have upheld the highest principles of honesty and integrity in all of my academic work.}
+  \textbf{I have upheld the highest principles of honesty and integrity in all of my academic work.}
 
-\vspace{2em}
+  \vspace{2em}
 
-$\rule{13cm}{0.15mm}$
+  $\rule{13cm}{0.15mm}$
 
 \end{center}
 
-\vfill\phantom{}
+\vfill
+
+
+\begin{center}
+  \begin{tabular}{| c | c | c |}
+    \hline
+    {\bf Problem}  & \textbf{Max} & \textbf{Score} \\
+    \hline\hline
+    \textbf{1}     &  &  \\ \hline
+    \textbf{2}     &  &  \\ \hline
+    \textbf{3}     &  &  \\ \hline
+    \textbf{4}     &  &  \\ \hline\hline
+    \textbf{TOTAL} &  &  \\ \hline
+  \end{tabular}
+\end{center}
 
 
 
@@ -65,29 +93,25 @@ $\rule{13cm}{0.15mm}$
 \begin{enumerate}
 
   \item Question 1
-        \begin{enumerate}[(a)]
-          \item Part a
 
-          \vspace{4em}
-          \item Part b
+        \vspace{10em}
 
-          \vspace{4em}
-          \item Part c
-        \end{enumerate}
-
-  \vspace{4em}
   \item Question 2
 
-  \vspace{10em}
+        \vspace{10em}
+
   \item Question 3
 
-  \vspace{10em}
+        \vspace{10em}
+
   \item Question 4
 
-  \newpage
+        \newpage
+
   \item Question 5
 
-  \vspace{30em}
+        \vspace{30em}
+
   \item Question 6
 
 \end{enumerate}
