@@ -3,7 +3,7 @@
 
 \documentclass[12pt]{article}
 
-\usepackage{latexsym, amsfonts, enumerate, hyperref, amsmath, amsthm, pgf, latexsym, graphicx, float, soul, lipsum, fancyhdr}
+\usepackage{latexsym, amsfonts, enumerate, hyperref, amsmath, amsthm, pgf, latexsym, graphicx, float, soul, lipsum, fancyhdr, lastpage}
 
 
 %% FORMAT THE PAGE
@@ -25,10 +25,13 @@
 %%% PAGE HEADER SETUP
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{\myexamname}
+\lhead{\textbf{Name:}}
 \chead{}
-\lhead{\myclass: \mycoursetitle}
-\cfoot{\thepage}
+\rhead{\textbf{ID:}\hspace{10em}}
+\renewcommand{\footrulewidth}{0.4pt}
+\lfoot{\myclass: \myexamname}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+\rfoot{\mydate}
 
 
 
@@ -46,7 +49,7 @@
 \vspace{.25em}
 \hrule
 \vspace{1em}
-\noindent NAME:
+\noindent NAME: \hfill ID: \hspace{10em} \phantom{}
 
 \vspace{1em}
 
